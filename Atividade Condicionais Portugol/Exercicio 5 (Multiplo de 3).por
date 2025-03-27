@@ -11,6 +11,11 @@ programa {
     se(div == 0){
       escreva("É múltiplo de 3!")
 
+      se(div !=  0){
+        escreva("Não é múltiplo de 3.")
+
+      }
+
     }
   }
 }
