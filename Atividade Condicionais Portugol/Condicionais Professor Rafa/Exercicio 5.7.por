@@ -6,29 +6,31 @@
 // e apresente o valor final da conta e sua composição (os detalhes,
 // pagamentos, descontos...);
 
-
 programa {
   funcao inicio() {
-    inteiro numeroDias, multa = 150
-    real diaria
+    inteiro multa = 150, numerodeDias, diaria
+    real desconto = 0.75, valorTotal
 
     escreva("Quantos dias Juca vai ficar no albergue: ")
-    leia(numeroDias)
-    se(numeroDias <= 5){
-      diaria = diaria * 100
+    leia(numerodeDias)
+
+    se(numerodeDias <= 5 ){
+      diaria = 100
+      escreva("Como você ficou " + numerodeDias + " dias, a diária será (R$)100")
     }senao{
-      se(numeroDias >= 6){
-        diaria = diaria * 90
+      se(numerodeDias >= 6 e numerodeDias <= 10){
+        diaria = 90
+        escreva("Como você ficou " + numerodeDias + " dias, a diária será (R$)90")
       }senao{
-        se(numeroDias >= 11){
-        diaria = diaria * 80
-        }senao{
-          
-          
-          escreva("e")
+        se(numerodeDias >= 11){
+        diaria = 80
+        escreva("Como você ficou " + numerodeDias + " dias, a diária será (R$)80")
         }
       }
     }
-
+    valorTotal = (numerodeDias * diaria * desconto) + multa
+    escreva("\nVocê vai ficar por: " + numerodeDias + " dias no albergue\n")
+    escreva("O valor teve 25% de desconto e mais uma multa adicional de R$ 150\n")
+    escreva("O valor total será: " + "(R$)" + valorTotal)
   }
 }
