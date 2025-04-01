@@ -33,7 +33,7 @@ programa {
     escreva("Digite a quantidade de dias que você foi para a aula: ")
     leia(frequencia)
 
-    media = (notaPeso1 + notaPeso2 + notaPeso3 + notaPeso4) /(nota1 + nota2 + nota3 + nota4)
+    media = (nota1 * notaPeso1 + nota2 * notaPeso2 + nota3 * notaPeso3 + nota4 * notaPeso4) / (notaPeso1 + notaPeso2 + notaPeso3 + notaPeso4)
     
     se(media > 10){
       escreva("Por favor, digite uma nota valida.")
@@ -48,15 +48,18 @@ programa {
           }senao{
             se(media >= 7 e frequencia >= 150){
               escreva("Você foi aprovado!")
+              escreva("Sua média é: " + media)
             }senao{
               se(media < 7 ou frequencia < 150){
                 escreva("Você foi reprovado!")
+                escreva("Sua média é: " + media)
+              }senao{
               }
             }
           }
         }
       }
     }
-    escreva("Sua média é: " + media)
+    
   }
 }
