@@ -11,6 +11,11 @@ function iniciar(){
     }else{
         if(brinquedo < 3){
             alert("Você pegou: " + brinquedo +" brinquedo(s)"+ " e " + moedas + " moeda(s).")
+        }else{
+            if(brinquedo <= 0){
+               moedas = 0
+               alert("Você pegou: " + brinquedo +" brinquedo(s)"+ " e " + moedas + " moeda(s).") 
+            }
         }
     }
 }
