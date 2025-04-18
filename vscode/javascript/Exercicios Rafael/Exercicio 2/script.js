@@ -9,11 +9,12 @@ function iniciar(){
         moedas = 3
         alert("Você pegou: " + brinquedo + " brinquedo(s)" + " e " + moedas + " moeda(s).")
     }else{
-        if(brinquedo < 3){
+        if(brinquedo < 3 && brinquedo > 0){
             alert("Você pegou: " + brinquedo +" brinquedo(s)"+ " e " + moedas + " moeda(s).")
         }else{
             if(brinquedo <= 0){
                moedas = 0
+               brinquedo = 0
                alert("Você pegou: " + brinquedo +" brinquedo(s)"+ " e " + moedas + " moeda(s).") 
             }
         }
