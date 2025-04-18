@@ -1,7 +1,7 @@
 // Ler distancia da corrida e tempo de viagem em segundos. caso o tempo de viagem for maior 
 // que 60 segundos fazer em minutos e daí em diante...
 
-function inciarJornada(){
+function jornada(){
     let distCorrida = Number(prompt("Digite a distância da corrida: "))
     let tempoViagem = Number(prompt("Digite o tempo da viagem: "))
     let resultadoTempo = tempoViagem
