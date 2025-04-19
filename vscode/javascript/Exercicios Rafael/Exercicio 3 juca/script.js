@@ -2,18 +2,25 @@
 // que 60 segundos fazer em minutos e daí em diante...
 
 function jornada(){
-    let distCorrida = Number(prompt("Digite a distância da corrida: "))
-    let tempoViagem = Number(prompt("Digite o tempo da viagem: "))
-    let resultadoTempo = tempoViagem
+    let distCorrida = Number(prompt("Digite a distância da corrida: (km)"))
+    let resultadoTempo = distCorrida / 300000
     
-    if(tempoViagem < 60 && tempoViagem >= 0){
+    if(resultadoTempo < 60 && resultadoTempo >= 0){
         alert("O tempo de viagem foi:  " + resultadoTempo + " segundo(s).")
-    }else if(tempoViagem >= 60){
-        resultadoTempo = tempoViagem / 60
+    }else if(resultadoTempo >= 60 && resultadoTempo < 3600){
+        resultadoTempo = resultadoTempo / 60
         alert("O tempo de viagem foi:  " + resultadoTempo + " minuto(s).")
-    }else if(resultadoTempo >= 60){
-        resultadoTempo = tempoViagem * 60
-        resultadoTempo = resultadoTempo / 24
+    }else if(resultadoTempo >= 3600 && resultadoTempo < 86400){
+        resultadoTempo = resultadoTempo / 3600
         alert("O tempo de viagem foi:  " + resultadoTempo + " hora(s).")
+    }else if(resultadoTempo >= 86400 && resultadoTempo < 604800){
+        resultadoTempo = resultadoTempo / 86400 
+        alert("O tempo de viagem foi:  " + resultadoTempo + " dia(s).")
+    }else if(resultadoTempo >= 2629800 && resultadoTempo < 31557600){
+        resultadoTempo = resultadoTempo / 2629800
+        alert("O tempo de viagem foi:  " + resultadoTempo + " mese(s).")
+    }else if(resultadoTempo >= 31557600){
+        resultadoTempo = resultadoTempo / 31557600
+        alert("O tempo de viagem foi:  " + resultadoTempo + " ano(s).")
     }
 }

@@ -3,5 +3,5 @@ body{
     display: flex; justify-content: center; align-items: center; height: 100vh;
 }
 button {
-    background-color: rgb(70, 70, 70); color: rgb(255, 255, 130);scale: 2; size: 230px; height: 150px; width: 210px; display: flex; justify-content: center; align-items: center; border-color: rgba(255, 255, 100, 0.808);
+    background-color: rgb(70, 70, 70); color: rgb(255, 255, 130);scale: 2; size: 230px; height: 150px; width: 210px; display: flex; justify-content: center; align-items: center; border-color: rgba(255, 255, 100, 0.808); block-size: 120px;
 }
