@@ -4,4 +4,8 @@ body{
 }
 button {
     background-color: rgb(70, 70, 70); color: rgb(255, 255, 130);scale: 2; size: 230px; height: 150px; width: 210px; display: flex; justify-content: center; align-items: center; border-color: rgba(255, 255, 100, 0.808); block-size: 120px;
+    transition: transform ease 0.5s, color ease 0.6s
+}
+button:hover{
+    transform: scale(1.05) translateY(-5px); color: rgb(255, 255, 255); 
 }
