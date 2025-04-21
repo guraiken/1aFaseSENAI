@@ -1,11 +1,18 @@
 body{
     background-image: image-set("https://img.freepik.com/vetores-premium/enormes-aglomerados-de-estrelas-no-ceu-escuro-ilustracao-em-vetor-de-fundo-preto_643070-1096.jpg");
     display: flex; justify-content: center; align-items: center; height: 100vh;
+    
 }
 button {
     background-color: rgb(70, 70, 70); color: rgb(255, 255, 130);scale: 2; size: 230px; height: 150px; width: 210px; display: flex; justify-content: center; align-items: center; border-color: rgba(255, 255, 100, 0.808); block-size: 120px;
     transition: transform ease 0.5s, color ease 0.6s
 }
 button:hover{
-    transform: scale(1.05) translateY(-5px); color: rgb(255, 255, 255); 
+    transform: scale(1.1) translateY(-5px); color: rgb(255, 255, 255); 
+}
+.disco-gif{
+    transition: transform linear 0.5s
+}
+.disco-gif:hover{
+    transform: rotate(720deg) scale(0.0)
 }
