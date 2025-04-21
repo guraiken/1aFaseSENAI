@@ -5,6 +5,7 @@ function jornada(){
     let distCorrida = Number(prompt("Digite a distância da corrida: (km)"))
     let resultadoTempo = distCorrida / 300000
     
+
     if(resultadoTempo < 60 && resultadoTempo >= 0){
         alert("O tempo de viagem foi:  " + resultadoTempo + " segundo(s).")
     }else if(resultadoTempo >= 60 && resultadoTempo < 3600){
