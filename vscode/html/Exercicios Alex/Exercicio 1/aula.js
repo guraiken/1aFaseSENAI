@@ -1,10 +1,10 @@
-function exercicio1(){
+function exercicio1(){ // Soma
     let n1 = Number(prompt("Digite um número:"))
     let n2 = Number(prompt("Digite outro número"))
     let soma = n1 + n2
     alert("A soma dos dois números é: " + soma)
 }
-function exercicio2(){
+function exercicio2(){ // Media
     let n1 = Number(prompt("Digite um número:"))
     let n2 = Number(prompt("Digite outro número"))
     let media = (n1 + n2) / 2
@@ -23,7 +23,10 @@ function exercicio4(){ // Verificar se o número é par ou impar.
         alert("É par")
     }
 }
+function exercicio5(){
+    
+}
 
-function dava(){
+function dava(){ // (Não mexer)
     alert("easter egg! 😱")
 }

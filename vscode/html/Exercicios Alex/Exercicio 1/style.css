@@ -26,8 +26,13 @@
     @keyframes buton1{
         0% {transform:  scale(1); opacity: 1;}
         25% {transform: scale(1); opacity: 1;}
-        50% {transform: scale(1.05); opacity: 1;}
+        50% {transform: scale(1.02); opacity: 1;}
         100% {transform: scale(1); opacity: 1;}
+    }
+    @keyframes link{
+        0% {transform: translateX(0)}
+        50% {transform: translateX(5px);}
+        100% {transform: translateX(0);}
     }
     @keyframes butongeral{
         0% {transform:  scale(1); opacity: 1;}
@@ -40,20 +45,25 @@
         background-color: rgb(238, 247, 255);
     }
     p{
-        font-size: medium;
+        font-size: 2vh;
         font-weight: bold;
     }
     a{
+        transition: 0.6s ease;
         color: black;
         font-size: large;
-        position: absolute; left: 4vh;
+        position: absolute; left: 2vh;
+        animation: link 2s infinite ease;
+
     }
     a:hover{
+        animation-play-state: paused;
         transition: 0.3s ease;
-        color: rgb(132, 0, 255);
+        color: rgb(255, 145, 0);
+        scale: 0.9;
     }
     button{
-        background-color: rgb(110, 255, 113);
+        background-color: rgba(255, 196, 0, 0.493);
         color: rgb(0, 0, 0);
         padding: 5px 6px;
         font-size: large;
@@ -62,7 +72,7 @@
         font-weight: bolder;
         border-radius: 10px;
         border-width: 6px;
-        border-color: rgb(193, 108, 180);
+        border-color: rgb(255, 123, 0);
     }
     .botao:hover{
         animation: buton 0.6s ease;
