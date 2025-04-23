@@ -1,0 +1,82 @@
+.butong{
+    display: flex; position: absolute; left: 50vh; top: 73vh;
+    padding: 50px 100px;
+    background-color: crimson;
+    color: black;
+    font-size: x-large;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    border-radius: 50px;
+    border-width: 6px;
+    border-color: rgb(235, 232, 86);
+    animation: buton1 2.3s infinite;
+}
+@keyframes buton{
+    0% {transform: translateX(0) scale(1); opacity: 1;}
+    25% {transform: translateY(-5px) scale(1); opacity: 1;}
+    50% {transform: translateY(-10px) scale(1.05); opacity: 0.7;}
+    100% {transform: translateX(0) scale(1); opacity: 1;}
+}
+.butong:hover{
+    animation: buton 1.3s ease;
+}
+@keyframes buton1{
+    0% {transform:  scale(1); opacity: 1;}
+    25% {transform: scale(1); opacity: 1;}
+    50% {transform: scale(1.05); opacity: 1;}
+    100% {transform: scale(1); opacity: 1;}
+}
+@keyframes butongeral{
+    0% {transform:  scale(1); opacity: 1;}
+    25% {transform: scale(1); opacity: 1; color: rgb(0, 0, 0);}
+    40% {transform: scale(1.02); opacity: 0.8; color: rgb(0, 0, 0);}
+    100% {transform: scale(1); opacity: 1; color: black;}
+}
+body{
+    color: crimson;
+    background-color: rgb(238, 247, 255);
+}
+p{
+    font-size: medium;
+    font-weight: bold;
+}
+a{
+    color: black;
+    font-size: large;
+    position: absolute; left: 4vh;
+}
+a:hover{
+    transition: 0.3s ease;
+    color: rgb(132, 0, 255);
+}
+button{
+    background-color: rgb(110, 255, 113);
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: rgb(193, 108, 180);
+    animation: butongeral 3s infinite ease-in;
+}
+.botao:hover{
+    animation: buton 0.6s ease;
+}
+.botao.pos1{
+    display: flex; position: absolute; left: 158vh; top: 3vh;
+
+}
+.botao.pos2{
+    display: flex; position: absolute; left: 178vh; top: 3vh;
+
+}
+.botao.pos3{
+    display: flex; position: absolute; left: 197vh; top: 3vh;
+
+}
+.botao.pos4{
+    display: flex; position: absolute; left: 158vh; top: 12vh;
+}
