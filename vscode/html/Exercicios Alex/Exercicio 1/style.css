@@ -12,6 +12,7 @@
         border-width: 6px;
         border-color: rgb(235, 232, 86);
         animation: buton1 2.3s infinite;
+        cursor: progress;
     }
     @keyframes buton{
         0% {transform: translateX(0) scale(1); opacity: 1;}
@@ -41,7 +42,7 @@
     }
     body{
         color: crimson;
-        background-color: rgb(238, 247, 255);
+        background-color: rgb(239, 247, 255);
     }
     p{
         font-size: 2vh;
@@ -59,11 +60,11 @@
         animation-play-state: paused;
         transition: 0.3s ease;
         color: rgb(255, 145, 0);
-        scale: 0.9;
+        scale: 0.9; 
     }
     button{
-        background-color: rgba(255, 196, 0, 0.493);
-        color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.493);
+        color: rgb(255, 255, 255);
         padding: 5px 6px;
         font-size: large;
         font-style: oblique;
@@ -71,7 +72,8 @@
         font-weight: bolder;
         border-radius: 10px;
         border-width: 6px;
-        border-color: rgb(255, 123, 0);
+        border-color: rgb(255, 0, 0);
+        cursor: pointer;
     }
     .botao:hover{
         animation: buton 0.6s ease;

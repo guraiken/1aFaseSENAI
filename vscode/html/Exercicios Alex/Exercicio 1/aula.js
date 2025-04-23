@@ -59,8 +59,11 @@ function exercicio7(){ // Ano bissexto
         alert(`${ano} não é bissexto`)
     }
 }
-function exercicio1lista2(){
+function exercicio1Lista2(){ //Decodificador de mensagem
     let frase
+}
+function exercicio2Lista2(){ //Gerador de nome de super heroi
+    
 }
 
 
