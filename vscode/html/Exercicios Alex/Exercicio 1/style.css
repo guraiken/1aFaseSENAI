@@ -30,7 +30,7 @@
 @keyframes butongeral{
     0% {transform:  scale(1); opacity: 1;}
     25% {transform: scale(1); opacity: 1; color: rgb(0, 0, 0);}
-    40% {transform: scale(1.02); opacity: 0.8; color: rgb(0, 0, 0);}
+    40% {transform: scale(1.03); opacity: 0.8; color: rgb(0, 0, 0);}
     100% {transform: scale(1); opacity: 1; color: black;}
 }
 body{
@@ -60,7 +60,6 @@ button{
     border-radius: 10px;
     border-width: 6px;
     border-color: rgb(193, 108, 180);
-    animation: butongeral 3s infinite ease-in;
 }
 .botao:hover{
     animation: buton 0.6s ease;
@@ -79,4 +78,22 @@ button{
 }
 .botao.pos4{
     display: flex; position: absolute; left: 158vh; top: 12vh;
+}
+.botao.pos5{
+    display: flex; position: absolute; left: 178vh; top: 12vh;
+}
+.botao.pos6{
+    display: flex; position: absolute; left: 197vh; top: 12vh;
+}
+.botao.pos7{
+    display: flex; position: absolute; left: 158vh; top: 21vh;
+}
+.botao.pos8{
+    display: flex; position: absolute; left: 178vh; top: 21vh;
+}
+.botao.pos9{
+    display: flex; position: absolute; left: 197vh; top: 21vh;
+}
+.botao.pos10{
+    display: flex; position: absolute; left: 157vh; top: 29vh;
 }

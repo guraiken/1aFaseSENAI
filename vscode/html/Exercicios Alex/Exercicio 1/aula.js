@@ -23,6 +23,7 @@ function exercicio4(){ // Verificar se o número é par ou impar.
         alert("É par")
     }
 }
+
 function dava(){
     alert("easter egg! 😱")
 }
