@@ -1,4 +1,3 @@
-@media (min-width: 1025px) {
 
     .butong{
         display: flex; position: absolute; left: 50vh; top: 73vh;
@@ -78,36 +77,53 @@
         animation: buton 0.6s ease;
     }
     .botao.pos1{
-        display: flex; position: absolute; left: 148vh; top: 3vh;
+        display: flex; position: absolute; left: 143vh; top: 13vh;
 
     }
     .botao.pos2{
-        display: flex; position: absolute; left: 167vh; top: 3vh;
+        display: flex; position: absolute; left: 162vh; top: 13vh;
 
     }
     .botao.pos3{
-        display: flex; position: absolute; left: 186vh; top: 3vh;
+        display: flex; position: absolute; left: 181vh; top: 13vh;
 
     }
     .botao.pos4{
-        display: flex; position: absolute; left: 148vh; top: 12vh;
+        display: flex; position: absolute; left: 143vh; top: 22vh;
     }
     .botao.pos5{
-        display: flex; position: absolute; left: 167vh; top: 12vh;
+        display: flex; position: absolute; left: 162vh; top: 22vh;
     }
     .botao.pos6{
-        display: flex; position: absolute; left: 186vh; top: 12vh;
+        display: flex; position: absolute; left: 181vh; top: 22vh;
     }
     .botao.pos7{
-        display: flex; position: absolute; left: 148vh; top: 21vh;
+        display: flex; position: absolute; left: 143vh; top: 31vh;
     }
-    .botao.pos8{
-        display: flex; position: absolute; left: 167vh; top: 21vh;
+    .botao.pos1list2{
+        display: flex; position: absolute; left: 143vh; top: 47vh;
     }
-    .botao.pos9{
-        display: flex; position: absolute; left: 186vh; top: 21vh;
+    .botao.pos2list2{
+        display: flex; position: absolute; left: 181vh; top: 47vh;
     }
-    .botao.pos10{
-        display: flex; position: absolute; left: 147vh; top: 29vh;
+    .botao.pos3list2{
+        display: flex; position: absolute; left: 162vh; top: 47vh;
     }
-}
+    .botao.pos4list2{
+        display: flex; position: absolute; left: 143vh; top: 57vh;
+    }
+    .botao.pos12{
+        display: flex; position: absolute; left: 178vh; top: 50vh;
+    }
+    .botao.pos13{
+        display: flex; position: absolute; left: 147vh; top: 39vh;
+    }
+    .botao.pos14{
+        display: flex; position: absolute; left: 168vh; top: 39vh;
+    }
+    .botao.pos15{
+        display: flex; position: absolute; left: 188vh; top: 39vh;
+    }
+    .botao.pos16{
+        display: flex; position: absolute; left: 147vh; top: 48vh;
+    } 
