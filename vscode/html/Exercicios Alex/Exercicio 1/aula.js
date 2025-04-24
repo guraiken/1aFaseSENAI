@@ -59,11 +59,40 @@ function exercicio7(){ // Ano bissexto
         alert(`${ano} não é bissexto`)
     }
 }
-function exercicio1Lista2(){ //Decodificador de mensagem
-    let frase
+function exercicio1Lista2(min, max){ //Decodificador de mensagem
+
 }
 function exercicio2Lista2(){ //Gerador de nome de super heroi
-    
+    let numeroRandom = Math.floor (Math.random() * (12 - 1) + 1);
+    let nomeUsuario = prompt("Digite seu nome: ")
+    switch(numeroRandom){
+        case 1: alert(`${nomeUsuario} Super Bolas Sônicas`)
+        break
+        case 2: alert(`Capitão ${nomeUsuario} Saqueador de Corações`)
+        break
+        case 3: alert(`Mestre ${nomeUsuario} Artista Marcial de Rua (Breakdance)`)
+        break
+        case 4: alert(`${nomeUsuario} Volatilizador de Docerias`)
+        break
+        case 5: alert(`${nomeUsuario} Mestre dos Magos (DavyJones)`)
+        break
+        case 6: alert(`Seu amigo ${nomeUsuario} Super Depressão`)
+        break
+        case 7: alert(`${nomeUsuario} Pináculo da Pobreza`)
+        break
+        case 8: alert(`Mega ${nomeUsuario} Ápice da Musculatura desumana`)
+        break
+        case 9: alert(`Tralalero ${nomeUsuario} Tung Tung Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur`)
+        break
+        case 10: alert(`${nomeUsuario} o Megalomâniaco dos Roguelikes`)
+        break
+        case 11: alert(`${nomeUsuario} Fedor INsuportável`)
+        break
+    }
+}
+function exercicio3Lista2(){
+    let numero = geradorRandom(1, 9)
+    alert(numero)
 }
 
 
@@ -98,9 +127,10 @@ function exercicio2Lista2(){ //Gerador de nome de super heroi
 
 
 
-
-
-
+function geradorRandom(min, max){
+    let numeroRandom = Math.floor(Math.random() * (max - min) + min)
+   return numeroRandom
+}
 function dava(){ // (Não mexer)
     alert("easter egg! 😱")
 }
