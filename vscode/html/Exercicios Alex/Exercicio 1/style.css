@@ -1,5 +1,4 @@
-
-    .butong{
+      .butong{
         display: flex; position: absolute; left: 50vh; top: 73vh;
         padding: 50px 100px;
         background-color: crimson;
@@ -12,7 +11,7 @@
         border-width: 6px;
         border-color: rgb(235, 232, 86);
         animation: buton1 2.3s infinite;
-        cursor: progress;
+        cursor: pointer ;
     }
     @keyframes buton{
         0% {transform: translateX(0) scale(1); opacity: 1;}

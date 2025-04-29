@@ -1,3 +1,10 @@
+let contador = 0
+function botao(){ // soma de cliques do botão
+    contador++
+}
+function botao1(){
+    alert(`Você clicou ${contador} vezes!`)
+}
 function exercicio1(){ // Soma
     let n1 = Number(prompt("Digite um número:"))
     let n2 = Number(prompt("Digite outro número"))
@@ -59,10 +66,7 @@ function exercicio7(){ // Ano bissexto
         alert(`${ano} não é bissexto`)
     }
 }
-function exercicio1Lista2(min, max){ //Decodificador de mensagem
-
-}
-function exercicio2Lista2(){ //Gerador de nome de super heroi
+function exercicio1Lista2(){ //Gerador de nome de super heroi
     let numeroRandom = Math.floor (Math.random() * (12 - 1) + 1);
     let nomeUsuario = prompt("Digite seu nome: ")
     switch(numeroRandom){
@@ -90,11 +94,96 @@ function exercicio2Lista2(){ //Gerador de nome de super heroi
         break
     }
 }
-function exercicio3Lista2(){
+function exercicio2Lista2(){ // Horóscopo
+    let signo = prompt("Digite seu signo:")
     let numero = geradorRandom(1, 9)
-    alert(numero)
+    switch(numero){
+        case 1: alert(`Hoje é um ótimo dia para buscar desafios, ${signo}`)
+        break
+        case 2: alert(`${signo}, laços de confiança se fortalecem, trazendo calma e segurança diante dos desafios.`)
+        break
+        case 3: alert(`${signo}, A vida é uma corrida, e você está sempre na frente, com o coração pulsando de adrenalina!`)
+        break
+        case 4: alert(`${signo}, A estabilidade é a sua base, mas não tenha medo de explorar novos caminhos quando se sentir pronto. `)
+        break 
+        case 5: alert(`${signo}, A verdadeira força vem da sua capacidade de se adaptar, abraçar a mudança e proteger aqueles que ama.`)
+        break
+        case 6: alert(`${signo}, Você nasceu para brilhar e conquistar os corações ao seu redor com seu charme irresistível.`)
+        break
+        case 7: alert(`${signo}, A perfeição é sua busca, mas lembre-se de que a beleza está também na imperfeição.`)
+        break
+        case 8: alert(`${signo}, Equilibrar as escolhas da vida é um dom, mas não tenha medo de seguir seus próprios instintos.`)
+        break
+    }                                                                                                                                                                   
 }
 
+function exercicio3Lista2(){ // Jogo de Par ou Ímpar
+    let numeroComputador = geradorRandom(0, 11)
+    let numeroUsuario =  Number(prompt("Digite um número (O número escolhido será par ou impar): "))
+    let somaBoth = numeroComputador + numeroUsuario
+
+    if(numeroUsuario % 2 == 0 && somaBoth % 2 == 0){
+        alert(`O resultado deu ${somaBoth} e é par!\n O usuário ganhou!`)
+    }else if(numeroUsuario % 2 != 0 && somaBoth % 2 != 0){
+        alert(`O resultado deu ${somaBoth} e é ímpar!\n O usuário ganhou!`)
+    }else if(numeroUsuario % 2 == 0 && somaBoth %2 != 0){
+        alert(`O resultado deu ${somaBoth} e é ímpar!\n O usuário perdeu :(`)
+    }else if(numeroUsuario % 2 != 0 && somaBoth %2 == 0){
+        alert(`O resultado deu ${somaBoth} e é par!\n O usuário perdeu :(`)
+    }
+}
+
+function exercicio4Lista2(){ //Jogo do número secreto 
+    let numeroSecreto = geradorRandom(1, 101)
+    let numeroUser = Number(prompt("Digite um número de 1 a 100: "))
+
+    if(numeroUser == numeroSecreto){
+        alert(`Você ganhou!\n O número secreto era: ${numeroSecreto}`)
+    }else if(numeroUser != numeroSecreto){
+        alert(`Você perdeu..\n O número secreto era: ${numeroSecreto}\n Tente novamente!`)
+    }else{
+        alert("O número que você digitou é inválido.")
+    }
+}
+
+function exercicio5Lista2(){
+    
+}
+
+function exercicio6Lista2(){
+
+}
+function exercicio7Lista2(){ 
+    
+}
+
+function exercicio8Lista2(){
+
+}
+
+function exercicio9Lista2(){ //Decisometro (sim, nao, talvez)
+    let decisometro = geradorRandom (1, 4)
+    let pergunta = prompt("Você quer se decidir? (Sim/Não)")
+    let duvida
+
+    if(pergunta == "sim" || pergunta == "Sim"){
+        let duvida = prompt("Digite sua dúvida: ")
+        switch(decisometro){    
+            case 1: 
+            alert("Sim, você deveria.")
+            break
+            case 2:
+            alert("então a resposta é não.")
+            break
+            case 3:
+            alert("Talvez..")
+            break
+        }
+    }else if(pergunta == "Não" || pergunta == "nao" || pergunta == "não"){
+        alert("Ok.")
+    }else{
+    }
+}
 
 
 
