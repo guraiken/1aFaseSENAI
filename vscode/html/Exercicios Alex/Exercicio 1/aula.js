@@ -162,7 +162,7 @@ function exercicio8Lista2(){
 }
 
 function exercicio9Lista2(){ //Decisometro (sim, nao, talvez)
-    let decisometro = geradorRandom (1, 4)
+    let decisometro = geradorRandom (1, 10)
     let pergunta = prompt("Você quer se decidir? (Sim/Não)")
     let duvida
 
@@ -173,10 +173,28 @@ function exercicio9Lista2(){ //Decisometro (sim, nao, talvez)
             alert("Sim, você deveria.")
             break
             case 2:
-            alert("então a resposta é não.")
+            alert("Então a resposta é não.")
             break
             case 3:
             alert("Talvez..")
+            break
+            case 4:
+            alert("Sim")
+            break
+            case 5: 
+            alert("Na verdade, não")
+            break
+            case 6: 
+            alert("Eu acho que sim")
+            break
+            case 7:
+            alert("Isso.. hmmm.. talvez")
+            break
+            case 8: 
+            alert("Definitivamente não")
+            break
+            case 9: 
+            alert("Acho que você não deveria fazer nada")
             break
         }
     }else if(pergunta == "Não" || pergunta == "nao" || pergunta == "não"){
@@ -184,6 +202,11 @@ function exercicio9Lista2(){ //Decisometro (sim, nao, talvez)
     }else{
     }
 }
+
+function exercicio10lista2(){
+    
+}
+
 
 
 
