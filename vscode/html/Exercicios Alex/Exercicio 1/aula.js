@@ -181,7 +181,7 @@ function exercicio9Lista2(){ //Decisometro (sim, nao, talvez)
     let pergunta = prompt("Você quer se decidir? (Sim/Não)")
     let duvida
 
-    if(pergunta == "sim" || pergunta == "Sim"){
+    if(pergunta.length == 3 && pergunta.charAt(0) == "s" && pergunta.charAt(2) == "m" && pergunta.charAt(1) == "i" || pergunta.charAt(1) == "I" || pergunta.charAt(0) == "S" || pergunta.charAt(2) == "M"  ){
         let duvida = prompt("Digite sua dúvida: ")
         switch(decisometro){    
             case 1: 
