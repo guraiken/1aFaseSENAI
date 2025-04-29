@@ -146,10 +146,24 @@ function exercicio4Lista2(){ //Jogo do número secreto
     }
 }
 
-function exercicio5Lista2(){
-    
+function exercicio5Lista2(){ //gerador de senhas aleatorias
+    let quantidadeSenha = Number(prompt("Informe a quantidade de caractéres da senha: (1 a 5)"))
+    if(quantidadeSenha == 1){
+        alert(`A senha gerada foi: ${caracterAleatorio()} `)
+    }else if(quantidadeSenha == 2){
+        alert(`A senha gerada foi: 
+        ${caracterAleatorio()}${caracterAleatorio()}`)
+    }else if(quantidadeSenha == 3){
+        alert(`A senha gerada foi: 
+        ${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}`)
+    }else if(quantidadeSenha == 4){
+        alert(`A senha gerada foi: 
+        ${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}`)
+    }else if(quantidadeSenha == 5){
+        alert(`A senha gerada foi: 
+        ${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}`)
+    }
 }
-
 function exercicio6Lista2(){
 
 }
@@ -204,7 +218,7 @@ function exercicio9Lista2(){ //Decisometro (sim, nao, talvez)
 }
 
 function exercicio10lista2(){
-    
+
 }
 
 
@@ -237,8 +251,12 @@ function exercicio10lista2(){
 
 
 
-
-
+function caracterAleatorio(){
+    const caracterRandom = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%¨&*'
+    const numeroAleatorio = Math.floor(Math.random() * caracterRandom.length)
+    
+    return caracterRandom.charAt(numeroAleatorio)
+}
 function geradorRandom(min, max){
     let numeroRandom = Math.floor(Math.random() * (max - min) + min)
    return numeroRandom
