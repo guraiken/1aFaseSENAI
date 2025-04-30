@@ -163,71 +163,68 @@ function exercicio6Lista2(){ // Jogo da Forca
     let pergunta = prompt("Digite uma letra")
 }
 function exercicio7Lista2(){ // Quiz de Perguntas
-    let pergunta1 = "Quanto que é 20 * 10? \n Opções: \n 1 - 10 \n 2 - 20 \n 3 - 50 \n 4 - 100"
+    let pergunta1 = "Quanto que é 20 * 10? \n Opções: \n 1 - 10 \n 2 - 20 \n 3 - 50 \n 4 - 200"
     resposta1 = 4
     let pergunta2 = "Quantos lados tem um losango? \n Opções: \n 1 - 5 \n 2 - 4 \n 3 - 2 \n 4 - 1"
     resposta2 = 2
     let pergunta3 = "Em qual país do mundo fica Hong-Kong? \n Opções: \n 1 - China \n 2 - África \n 3 - Japão \n 4 - Coréia"
     resposta3 = 1
-    let pergunta4 = ""
-    resposta4 =
-    tentativas = 3
+    let pergunta4 = "Quem descobriu o Brasil? \n Opções: \n 1 - Mao Tsé Tung \n 2 - Dom. Pedro I \n 3 - Pedro Álvares Cabral \n 4 - Davi Brito"
+    resposta4 = 4   
+    tentativas = 2
     let nota = 0
     acertou1 = false
     acertou2 = false
     acertou3 = false
     acertou4 = false
-
+    
     while(nota != 10 && tentativas != 0){
-
+        nota = 0
         if(acertou1 === false){
            respostaPergunta1 = Number(prompt("Pergunta 1: " + pergunta1 + "\n Qual a alternativa correta?"))
         }
         if(respostaPergunta1 == resposta1){
-            nota+= 2
+            nota+= 2.5
             acertou1 = true
         }if(acertou1 === true){
-            alert("Você acertou! \n +2 pontos")
+            alert("Você acertou a número 1! \n 2 pontos")
         }else{
             alert("Você errou.")
-        }
-        if(acertou2 === false){
+        }if(acertou2 === false){
             respostaPergunta2 = Number(prompt("Pergunta 2: " + pergunta2 + "\n Qual a alternativa correta?"))
         }if(respostaPergunta2 == resposta2){
-            nota+= 2
+            nota+= 2.5
             acertou2 = true
         }if(acertou2 === true){
-            alert("Você acertou! \n +2 pontos")
+            alert("Você acertou a número 2! \n 2 pontos")
         }else{
             alert("Você errou.")
         }if(acertou3 === false){
-            respostaPergunta3 = Number(prompt("Pergunta 2: " + pergunta3 + "\n Qual a alternativa correta?"))
+            respostaPergunta3 = Number(prompt("Pergunta 3: " + pergunta3 + "\n Qual a alternativa correta?"))
         }if(respostaPergunta3 == resposta3){
-            nota+= 2
+            nota+= 2.5
             acertou3 = true
         }if(acertou3 === true){
-            alert("Você acertou! \n +2 pontos")
+            alert("Você acertou a número 3! \n 2 pontos")
         }else{
             alert("Você errou.")
         }if(acertou4 === false){
-            respostaPergunta4 = Number(prompt("Pergunta 2: " + pergunta4 + "\n Qual a alternativa correta?"))
+            respostaPergunta4 = Number(prompt("Pergunta 4: " + pergunta4 + "\n Qual a alternativa correta?"))
         }if(respostaPergunta4 == resposta4){
-            nota+= 2
+            nota+= 2.5
             acertou4 = true
         }if(acertou4 === true){
-            alert("Você acertou! \n +2 pontos")
+            alert("Você acertou a número 4! \n 2 pontos")
         }else{
             alert("Você errou.")
         }
-
-    
-    
-    
-    
-    
-    
-    
-    
+        if(tentativas != 0 && nota != 10){
+        tentativas--
+        alert(`Você ainda tem ${tentativas} tentativas`)
+        }
+        if(tentativas == 0 || nota == 10){  
+        alert("Seu quizz acabou, sua nota é: " + nota)
+        }
     }  
 }
 
