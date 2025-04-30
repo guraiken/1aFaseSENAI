@@ -135,41 +135,100 @@ function exercicio3Lista2(){ // Jogo de Par ou Ímpar
 
 function exercicio4Lista2(){ //Jogo do número secreto 
     let numeroSecreto = geradorRandom(1, 101)
-    let numeroUser = Number(prompt("Digite um número de 1 a 100: "))
-
+    let numeroUser = Number(prompt("Digite um número de 1 a 100: "))    
     if(numeroUser == numeroSecreto){
         alert(`Você ganhou!\n O número secreto era: ${numeroSecreto}`)
     }else if(numeroUser != numeroSecreto){
-        alert(`Você perdeu..\n O número secreto era: ${numeroSecreto}\n Tente novamente!`)
+        alert(`Você perdeu..\n O número secreto era: ${numeroSecreto}`)
     }else{
         alert("O número que você digitou é inválido.")
-    }
+    } 
 }
 
 function exercicio5Lista2(){ //gerador de senhas aleatorias
-    let quantidadeSenha = Number(prompt("Informe a quantidade de caractéres da senha: (1 a 5)"))
-    if(quantidadeSenha == 1){
-        alert(`A senha gerada foi: 
-        ${caracterAleatorio()} `)
-    }else if(quantidadeSenha == 2){
-        alert(`A senha gerada foi: 
-    ${caracterAleatorio()}${caracterAleatorio()}`)
-    }else if(quantidadeSenha == 3){
-        alert(`A senha gerada foi: 
-        ${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}`)
-    }else if(quantidadeSenha == 4){
-        alert(`A senha gerada foi: 
-    ${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}`)
-    }else if(quantidadeSenha == 5){
-        alert(`A senha gerada foi: 
-        ${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}${caracterAleatorio()}`)
+    let quantidadeSenha = Number(prompt("Informe a quantidade de caractéres da senha: (Máx 50)"))
+    let senha = ''
+    while(quantidadeSenha > 0 && quantidadeSenha <= 50){
+        senha+= caracterAleatorio()
+        quantidadeSenha--
     }
+    if(quantidadeSenha <= 50){
+        alert("Sua senha é: " + senha)
+        }else{
+            alert(`O número ${quantidadeSenha} está fora dos limites do gerador.`)
+        }
 }
-function exercicio6Lista2(){
+function exercicio6Lista2(){ // Jogo da Forca
+    let tentativas = 3
+    let pergunta = prompt("Digite uma letra")
+}
+function exercicio7Lista2(){ // Quiz de Perguntas
+    let pergunta1 = "Quanto que é 20 * 10? \n Opções: \n 1 - 10 \n 2 - 20 \n 3 - 50 \n 4 - 100"
+    resposta1 = 4
+    let pergunta2 = "Quantos lados tem um losango? \n Opções: \n 1 - 5 \n 2 - 4 \n 3 - 2 \n 4 - 1"
+    resposta2 = 2
+    let pergunta3 = "Em qual país do mundo fica Hong-Kong? \n Opções: \n 1 - China \n 2 - África \n 3 - Japão \n 4 - Coréia"
+    resposta3 = 1
+    let pergunta4 = ""
+    resposta4 =
+    tentativas = 3
+    let nota = 0
+    acertou1 = false
+    acertou2 = false
+    acertou3 = false
+    acertou4 = false
 
-}
-function exercicio7Lista2(){ 
+    while(nota != 10 && tentativas != 0){
+
+        if(acertou1 === false){
+           respostaPergunta1 = Number(prompt("Pergunta 1: " + pergunta1 + "\n Qual a alternativa correta?"))
+        }
+        if(respostaPergunta1 == resposta1){
+            nota+= 2
+            acertou1 = true
+        }if(acertou1 === true){
+            alert("Você acertou! \n +2 pontos")
+        }else{
+            alert("Você errou.")
+        }
+        if(acertou2 === false){
+            respostaPergunta2 = Number(prompt("Pergunta 2: " + pergunta2 + "\n Qual a alternativa correta?"))
+        }if(respostaPergunta2 == resposta2){
+            nota+= 2
+            acertou2 = true
+        }if(acertou2 === true){
+            alert("Você acertou! \n +2 pontos")
+        }else{
+            alert("Você errou.")
+        }if(acertou3 === false){
+            respostaPergunta3 = Number(prompt("Pergunta 2: " + pergunta3 + "\n Qual a alternativa correta?"))
+        }if(respostaPergunta3 == resposta3){
+            nota+= 2
+            acertou3 = true
+        }if(acertou3 === true){
+            alert("Você acertou! \n +2 pontos")
+        }else{
+            alert("Você errou.")
+        }if(acertou4 === false){
+            respostaPergunta4 = Number(prompt("Pergunta 2: " + pergunta4 + "\n Qual a alternativa correta?"))
+        }if(respostaPergunta4 == resposta4){
+            nota+= 2
+            acertou4 = true
+        }if(acertou4 === true){
+            alert("Você acertou! \n +2 pontos")
+        }else{
+            alert("Você errou.")
+        }
+
     
+    
+    
+    
+    
+    
+    
+    
+    }  
 }
 
 function exercicio8Lista2(){
@@ -212,15 +271,16 @@ function exercicio9Lista2(){ //Decisometro (sim, nao, talvez)
             alert("Acho que você não deveria fazer nada")
             break
         }
-    }else if(pergunta == "Não" || pergunta == "nao" || pergunta == "não"){
+    }else if(pergunta.length != 3){
         alert("Ok.")
     }else{
     }
 }
 
-function exercicio10lista2(){
+function exercicio10Lista2(){
 
 }
+
 
 
 
