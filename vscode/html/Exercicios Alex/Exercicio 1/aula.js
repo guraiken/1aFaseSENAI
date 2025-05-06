@@ -218,7 +218,7 @@ function exercicio7Lista2(){ // Quiz de Perguntas
         }else{
             alert("Você errou.")
         }
-        if(tentativas != 0 && nota != 10){
+        if(tentativas != 0 || nota != 10){
         tentativas--
         alert(`Você ainda tem ${tentativas} tentativas`)
         }

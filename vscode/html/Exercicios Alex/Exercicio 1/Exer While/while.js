@@ -1,0 +1,115 @@
+function exercicio1(){ // par e impar
+    let numero = 1
+    while(numero <= 20){
+        if(numero % 2 == 0){
+            alert(`O número ${numero} é par`)
+        }else{
+            alert(`O número ${numero} é impar`)
+        }
+        numero++
+    }
+}
+
+function exercicio2(){ // ola mundo
+    let ola = "Olá mundo!"
+    let contador = 1 // controla a quantidade de vezes que aparece
+    while(contador <= 5){
+        alert(ola)
+        contador++ //adiciona mais 1 cada vez que sai o alert
+    }
+}
+function exercicio3(){ //contar de 0 a 50 pulando de 5 em 5
+    let numero = 0
+    while(numero <= 50){
+      alert("O número atual é " + numero)
+      numero+= 5
+    }
+}
+function exercicio4(){ // contar de 100 a 0 pulando de 10 em 10
+    let numero = 100
+    while(numero != -10){ //numero vai parar no 0
+        alert("O número atual é " + numero)
+        numero-= 10
+    }
+}
+function exercicio5(){ //contar de 0 até 30 mostrando apenas o múltiplos de 3 
+    let numero = 3
+    while(numero <= 30){
+        alert("Multiplos de 3: " + numero)
+        numero+= 3
+    }
+}
+function exercicio6(){ // contar de 1 até 10 e mostrar o quadrado de cada número
+    numero = 1
+    while(numero <= 10){
+        quadrado = numero * numero
+        alert(`O quadrado de ${numero} é: ${quadrado}`)
+        numero++
+    }
+}
+function exercicio7(){ // contar de 1 até 10 e mostrar o cubo de cada número
+    numero = 1
+    while(numero <= 10){
+        let cubo = numero** 3
+        alert(`O cubo de ${numero} é: ${cubo}`)
+        numero++
+    }
+}
+function exercicio8(){ // conte até 100 e mostre somente os divisíveis por 4
+    numero = 1
+    while(numero <= 100){
+        if(numero % 4 === 0){
+            alert(`Números divisíveis por 4: ${numero}`)
+        }
+        numero++
+    }
+}
+function exercicio9(){ // numeros de 1 a 10
+    numero = 1
+    while(numero <= 10){
+        alert("Número " + numero)
+        numero++
+    }
+}
+function exercicio10(){ // contar até 20. Multiplos de 3 devo escrever Fizz
+    numero = 1
+    while(numero <= 20){
+        if(numero % 3 == 0){
+            alert("Fizz")
+        }else{
+            alert("Número " + numero)
+        }
+        numero++
+    }
+}
+function exercicio11(){
+
+}
+
+
+
+
+
+// let senha = "Alex123"
+// let acertou = false
+// tentativas = 1
+// while(tentativas <= 3 && acertou == false){
+//     let senhatentativa = prompt("Digite a senha:")
+//     if(senha === senhatentativa){
+//         alert("Senha correta, usuário logado")
+//         tentativas = 4
+//         acertou = true
+//     }else if (tentativas != 0 && acertou == false){
+//         alert("Senha incorreta!")
+        
+//     }if(tentativas >= 0 && acertou == false){
+//         let tentativassobrando = 3 - tentativas
+//         let numeroTentativas = 3
+//         alert("Você tem mais: " + tentativassobrando + " tentativas.")
+//         tentativas++
+//     }
+// }
+// if(acertou == false){ 
+// alert("Conta bloqueada")
+// }else{
+// alert ("Você entrou no sistema")}
