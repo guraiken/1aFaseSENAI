@@ -65,14 +65,14 @@ function exercicio8(){ // conte até 100 e mostre somente os divisíveis por 4
     }
 }
 function exercicio9(){ // numeros de 1 a 10
-    numero = 1
+    let numero = 1
     while(numero <= 10){
         alert("Número " + numero)
         numero++
     }
 }
 function exercicio10(){ // contar até 20. Multiplos de 3 devo escrever Fizz
-    numero = 1
+    let numero = 1
     while(numero <= 20){
         if(numero % 3 == 0){
             alert("Fizz")
@@ -82,9 +82,29 @@ function exercicio10(){ // contar até 20. Multiplos de 3 devo escrever Fizz
         numero++
     }
 }
-function exercicio11(){
-
+function exercicio11(){ // Conte até 20 e exiba “Buzz” para múltiplos de 5.
+    let numero = 1 
+    
+    while(numero <= 20){
+        if(numero % 5 == 0){
+            alert("Buzz")
+            numero++
+        }else{
+            alert("Número:" + numero)
+            numero++
+        }
+    }
 }
+function exercicio12(){ 
+    let numero = 1
+    let contador = 1
+
+    while(contador <= 10){
+        
+
+    }
+}
+
 
 
 
@@ -113,3 +133,59 @@ function exercicio11(){
 // alert("Conta bloqueada")
 // }else{
 // alert ("Você entrou no sistema")}
+
+// function exerciciopair(){
+//     let numerodigitado = Number(prompt("Digite um número"))
+//     let digito = 0
+//     let contador = 1 
+    
+//     while(contador <= String(numerodigitado).length){
+//         digito++
+//         contador++
+//     }
+//     alert("Digitos: " + digito)
+// }
+
+// function simuladorPar(){
+//     let contador = 1
+//     let somatorio = 0 
+    
+//     while(contador <= 20){
+//         if(contador % 2 == 0){
+//             somatorio = somatorio + contador
+//             alert("Número: " + contador + " é par e o somatório é " + somatorio)
+//         }
+//         contador++
+//     }
+// }
+
+// function fatorial(){
+//     numeroDigitado = Number(prompt("Digite o número para fatorar:"))
+//     let contador = 1
+//     let fatorial = numeroDigitado
+
+//     while(contador < numeroDigitado){
+//         fatorial = fatorial * (numeroDigitado - contador)
+//         contador++
+//     }
+
+//     alert("O fatorial de " + numeroDigitado + " é: " + fatorial)       
+// }
+
+// function guessNumberAleatorio(){
+//     let numerousuario = 0
+//     let numerosecreto = Math.floor(Math.random()* 100)
+
+//     while(numerosecreto !== numerousuario){
+//         numerousuario = Number(prompt("Digite o número que você acha que é:"))
+//         if(numerousuario === numerosecreto){
+//             alert("Parabéns, você acertou!")
+//         }else if(numerousuario < numerosecreto){
+//             alert("O número que você digitou é menor")
+//         }else if(numerousuario > numerosecreto){
+//             alert("O número que você digitou é maior!")
+//         }else{
+//             alert("Por favor, digite um número válido.")
+//         }
+//     }
+// }
