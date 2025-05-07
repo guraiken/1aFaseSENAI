@@ -95,17 +95,85 @@ function exercicio11(){ // Conte até 20 e exiba “Buzz” para múltiplos de 5
         }
     }
 }
-function exercicio12(){ 
-    let numero = 1
+function exercicio12(){  // some os números de 1 a 10
+    let numero = 0
     let contador = 1
-
+    
     while(contador <= 10){
-        
+        numero = numero + contador
+        alert("A soma de " + contador + " é igual a: " + numero)
+        contador++
+    }
+}
+function exercicio13(){ //contar quantos números pares existem de 1 até 50
+   let contador = 1
+   let somatoriopar = 0
+   let usuariopediu = Number(prompt("Qual número você quer ver a quantidade de pares?"))
+   let somaimpar = 0
 
+   while(contador <= usuariopediu){
+        if(contador % 2 == 0){
+            somatoriopar++
+        }else if(contador % 2 != 0){
+            somaimpar++
+        }
+        contador++
+   }
+   alert("A quantidade de números pares é: " + somatoriopar + "\n A quantidade de números impar é: " + somaimpar)
+} //mostra os números pares e ímpares também, além de deixar o usuário pedir
+
+function exercicio14(){
+    let contador = 1
+    let multiplo = 0
+    let usuario = Number(prompt("Digite um número:"))
+    let usuariomult = Number(prompt("Digite qual múltiplo você quer saber:"))
+
+    while(contador <= usuario){
+        if(contador % usuariomult == 0){
+            multiplo++
+        }
+        contador++
+    }
+    if(multiplo == 1){
+        alert(`O número ${usuario} tem ${multiplo} número múltiplo de ${usuariomult}.`)
+    }else if(multiplo == 0){
+        alert(`Não tem números múltiplos de ${usuariomult}}.`)
+    }else if(multiplo > 1){
+        alert(`O número ${usuario} tem ${multiplo} números múltiplos de ${usuariomult}.`) 
+    }else{
+        alert("Digite um número válido.")
+    } //Deixa o usuário pedir quantos números quer e os múltiplos que quer
+}
+
+function exercicio15(){
+    numero = 0
+    contador = 1
+
+    while(contador <= 30){ //contar os números de 1 até 30 pulando multiplos de 4
+        if(contador % 4 == 0){
+            alert("Número: " + contador)
+            numero++ //vai contar os números e ir adicionando
+        }
+        contador++
     }
 }
 
+function exercicio16(){
+    let soma = 0
+    let contador = 1
+    let numero = 1
 
+    while(contador <= 100){
+        soma = soma + contador
+        ++contador
+        if(soma >= 400){
+            alert("O número ultrapassou 400.")
+            contador = 101
+        }else{
+            alert("Número " + soma)
+        }
+    }    
+}
 
 
 
