@@ -161,18 +161,38 @@ function exercicio15(){
 function exercicio16(){
     let soma = 0
     let contador = 1
-    let numero = 1
+    let deuruim = false
 
-    while(contador <= 100){
+    while(contador <= 100 && deuruim === false){
         soma = soma + contador
         ++contador
         if(soma >= 400){
             alert("O número ultrapassou 400.")
-            contador = 101
+            deuruim = true
         }else{
             alert("Número " + soma)
         }
     }    
+}
+function exercicio17(){ // Simule o funcionamento de um semáforo (verde → amarelo → vermelho)
+    let contador = 1
+    let contadorsinal1 = 5
+    let contadorsinal2 = 5
+    let contadorsinal3 = 5
+
+    while(contador <= 20){
+        if(contador >= 5 && contadorsinal1 > 0){ 
+            alert("Sinal verde.. " + "Sinal amarelo em: " + contadorsinal1 + " segundos")
+            contadorsinal1--
+        }else if(contador >= 10 && contadorsinal2 > 0){
+            alert(`Sinal amarelo.. Sinal vermelho em ${contadorsinal2} segundos`)
+            contadorsinal2--
+        }else if(contador >= 15 && contadorsinal3 > 0){
+            alert(`Sinal vermelho, aguarde ${contadorsinal3} segundos`)
+            contadorsinal3--
+        }
+        contador++
+    }
 }
 
 

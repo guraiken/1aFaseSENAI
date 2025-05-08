@@ -19,5 +19,5 @@ button:hover{
     flex-wrap: wrap;
     align-items: center; 
     align-content: center;
-    background-image: image-set("sisifo.jpeg");
+    background-image: image-set("sisifo.jpeg"); background-repeat: no-repeat; background-size: 100%;
 }
