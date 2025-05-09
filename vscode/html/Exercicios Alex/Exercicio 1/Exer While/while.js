@@ -175,23 +175,26 @@ function exercicio16(){
     }    
 }
 function exercicio17(){ // Simule o funcionamento de um semáforo (verde → amarelo → vermelho)
-    let contador = 1
-    let contadorsinal1 = 5
-    let contadorsinal2 = 5
-    let contadorsinal3 = 5
+    let tempo
+    let vezes = 3
 
-    while(contador <= 20){
-        if(contador >= 5 && contadorsinal1 > 0){ 
-            alert("Sinal verde.. " + "Sinal amarelo em: " + contadorsinal1 + " segundos")
-            contadorsinal1--
-        }else if(contador >= 10 && contadorsinal2 > 0){
-            alert(`Sinal amarelo.. Sinal vermelho em ${contadorsinal2} segundos`)
-            contadorsinal2--
-        }else if(contador >= 15 && contadorsinal3 > 0){
-            alert(`Sinal vermelho, aguarde ${contadorsinal3} segundos`)
-            contadorsinal3--
+    while(vezes > 0){
+        tempo = 5
+        while(tempo > 0){
+            alert("Semáfaro Verde - " + tempo)
+            tempo--
         }
-        contador++
+        tempo = 5
+        while(tempo > 0){
+            alert("Semáfaro Amarelo - " + tempo)
+            tempo--
+        }
+        tempo = 5
+        while(tempo > 0){
+            alert("Semáfaro Vermelho - " + tempo)
+            tempo--
+        }
+        vezes--
     }
 }
 
