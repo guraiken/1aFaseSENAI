@@ -20,10 +20,14 @@ function exercicio2(){ // ola mundo
 }
 function exercicio3(){ //contar de 0 a 50 pulando de 5 em 5
     let numero = 0
-    while(numero <= 50){
-      alert("O número atual é " + numero)
+    let resultado = ''
+    let passou50 = false
+    while(numero <= 50 && passou50 === false){
       numero+= 5
+      resultado+= numero + ", "
+      if(numero >= 50) passou50 = true
     }
+    alert("Números de 0 a 50, pulados de 5 em 5.\n "+ resultado)
 }
 function exercicio4(){ // contar de 100 a 0 pulando de 10 em 10
     let numero = 100

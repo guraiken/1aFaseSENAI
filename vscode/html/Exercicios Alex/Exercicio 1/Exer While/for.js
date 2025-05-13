@@ -41,9 +41,10 @@ function exercicio3L2(){
     let resultado = ''
     for(let cont = 0; cont <= 100; cont++){
         if(cont % 2 == 0 || cont % 3 == 0 || cont == 25)
-        {resultado += cont + ", "
-    }        
-}
+        {resultado += cont + ", "   
+
+        }        
+    }
     alert(resultado)
 }
 
