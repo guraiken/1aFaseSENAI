@@ -12,6 +12,7 @@ function exer11(){
     senha == true ? alert("Usuário logado.") : alert("Usuário bloqueado.")
 }
 
+//termos e idade
 function exer12(){
     let idade = 0
     let aceitoutermos = false
