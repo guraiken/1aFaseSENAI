@@ -54,3 +54,47 @@ function exer6(){ // invalido se n for de 1 a 100
     if(numeropedido >= 1 && numeropedido <= 100) alert("Número válido")
     else alert("Número inválido")
 }
+
+//Peça a idade e se o usuário é estudante. Exiba "Meia entrada" se for menor de
+// 18 ou estudante.
+function exer7(){ 
+    let idade = prompt("Digite sua idade:")
+    let estudante = prompt("Você é estudante?")
+
+    if(idade <18 || estudante == "Sim" || estudante == "sim"){
+        alert("Meia entrada")
+    }else alert("Entrada normal")
+}
+
+//Peça se o usuário aceitou os termos (sim/não) e confirmou o email (sim/não).
+// Exiba "Cadastro completo" se ambos forem "sim".
+function exer8(){
+    let termos = prompt("Aceita os termos? (sim/não)")
+    let email = prompt("Confirmou o seu email? (sim/não)")
+
+    if(termos == "sim" && email == "sim"){
+        alert("Cadastro completo")
+    }else alert("Cadastro incompleto")
+}
+
+//Peça a altura e o peso. Exiba "Apto para o esporte" se altura > 1.60m e peso
+// entre 50 e 90 kg.
+function exer9(){
+    let altura = Number(prompt("Digite sua altura"))
+    let peso = Number(prompt("Digite seu peso (Kg)"))
+
+    if(altura >= 1.60 && peso >= 50 && peso <= 90){
+        alert("Apto para o esporte")
+    }else alert("Inapto para o esporte")
+}
+
+// Verifique se uma pessoa não é maior de idade ou não aceitou os termos. Se
+// for verdade, exiba "Acesso negado"
+function exer10(){
+    let idade = prompt("Digite sua idade:")
+    let termos = prompt("Aceitou os termos? (sim/não)")
+
+    if(idade >= 18 && termos == "sim"){
+        alert("Acesso autorizado")
+    }else alert("Acesso negado")
+}
