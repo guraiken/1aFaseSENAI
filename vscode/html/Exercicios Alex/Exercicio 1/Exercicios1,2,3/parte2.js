@@ -9,10 +9,19 @@ function exer11(){
         tentativas--
         senha == false ? alert("Você tem mais " + tentativas + " tentativas.") : true
     }
-    if(senha)alert("Usuário logado")
-    else alert("Usuario bloqueado")
+    senha == true ? alert("Usuário logado.") : alert("Usuário bloqueado.")
 }
 
+function exer12(){
+    let idade = 0
+    let aceitoutermos = false
+
+    while(idade < 18 || aceitoutermos === false){
+        idade = Number(prompt("Digite sua idade:"))
+        aceitoutermos = prompt("Você aceita os termos? (sim/não)") == "sim" ? true : false
+    }
+    alert("Você tem permissão.")
+}
 
 
 
