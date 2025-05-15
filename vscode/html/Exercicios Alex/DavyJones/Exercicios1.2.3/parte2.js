@@ -82,10 +82,16 @@ function exer17(){
 function exer18(){
     let num1 = 1
     let num2 = 1
+    let condition = false
 
-    while(num1 < 10 || num2 % 3 != 0){
+    while(condition == false){
         num1 = Number(prompt("Digite um número:"))
         num2 = Number(prompt("Digite outro número:"))
+        if(num1 % 3 == 0 && num2 >= 10){
+            condition = true
+        }else if(num1 >= 10 && num2 % 3 ==0){
+            condition = true
+        }
     }
     alert("O número está dentro dos parâmetros")
 }
