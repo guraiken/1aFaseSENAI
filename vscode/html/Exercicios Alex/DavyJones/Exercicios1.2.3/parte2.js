@@ -80,13 +80,11 @@ function exer17(){
 
 //dois valores até que um seja multiplo de 3 e o outro maior que 10
 function exer18(){
-    let num1 = 1
-    let num2 = 1
     let condition = false
 
     while(condition == false){
-        num1 = Number(prompt("Digite um número:"))
-        num2 = Number(prompt("Digite outro número:"))
+        let num1 = Number(prompt("Digite um número:"))
+        let num2 = Number(prompt("Digite outro número:"))
         if(num1 % 3 == 0 && num2 >= 10){
             condition = true
         }else if(num1 >= 10 && num2 % 3 ==0){
@@ -94,6 +92,31 @@ function exer18(){
         }
     }
     alert("O número está dentro dos parâmetros")
+}
+
+//login
+function exer19(){
+    let admin = false
+    let senha = false
+
+    while(admin == false || senha == false){
+    admin = prompt("Digite seu usuário: ") == 'admin' ? true:false
+    senha = prompt("Digite sua senha: ") == '1234' ?true:false
+    }
+    alert("Usuário logado!")
+}
+
+//enquanto n preencher idade e nome vai continuar rodando
+function exer20(){
+    let nome = false
+    let idade = false
+
+    while(nome == false || idade == false){
+        nome = prompt("Digite seu nome: ") >= 'a' ? true:false
+        idade = Number(prompt("Digite sua idade:")) >= 1 ?true:false
+    }
+    alert("Login permitido!")
+    
 }
 
 
