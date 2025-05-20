@@ -1,10 +1,3 @@
-let contador = 0
-function botao(){ // soma de cliques do botão
-    contador++
-}
-function botao1(){
-    alert(`Você clicou ${contador} vezes!`)
-}
 function exercicio1(){ // Soma
     let n1 = Number(prompt("Digite um número:"))
     let n2 = Number(prompt("Digite outro número"))
