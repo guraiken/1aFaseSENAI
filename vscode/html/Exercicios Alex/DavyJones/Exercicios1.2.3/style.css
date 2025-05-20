@@ -6,10 +6,12 @@ h1 {
 }
 
 body {
-
+    box-sizing: border-box;
     background-image: image-set("wallpaperbully.webp");
     background-size: 110%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
