@@ -6,7 +6,7 @@ function imc(){
     let altura = Number(document.getElementById("altura").value)
     
     let resultado = document.getElementById("resultado")
-    let imc = peso / altura** 2
+    let imc = (peso / altura** 2).toFixed(2)
 
     if(imc >= 18.6 && imc < 25){
         resultado.innerText = `Olá, seja bem vindo ${nome}, ${idade} anos. \nO resultado do seu IMC é: ${imc} \n Você está saudável!`  
