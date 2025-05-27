@@ -128,6 +128,10 @@
     .botao.pos10list2{
         display: flex; position: absolute; left: 143vh; top: 77vh;
     }
+    #clicker{
+        padding: 10px 20px;
+        display: flex;
+    }
     .box-clicker{
         transition: 1.3s;
         bottom: 15vh;
