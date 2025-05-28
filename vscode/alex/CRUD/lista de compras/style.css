@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+}
+.container_principal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.botao_cadastro {
+    padding: 5px;
+    max-height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+
+.botao_cadastro:hover {
+    background-color: rgb(179, 0, 179);
+}
+
+.conteudo-lista {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: whitesmoke;
+}
+
+ol {
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+
+}
+
+.editar-lapis {
+    cursor: pointer;
+}
+
+.lixeira {
+    cursor: pointer;
+}
+
+.editar-lapis:hover,.lixeira:hover {
+    filter: brightness(120%);
+}
+
+/* Parte do cadastro */
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-cadastro {
+    margin: 20px;
+    width: 50%;
+    height: 530px;
+    background-color: rgb(81, 81, 81);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 15px;
+}
+.conteudo-cadastro {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.conteudo-cadastro button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+
+.botao-voltar {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #e3c400; 
+    color: white;
+}
+.botao-voltar:hover {
+    background-color: #f5d400;
+}
+
+.conteudo-cadastro button:hover{
+    background-color: rgb(179, 0, 179);
+}

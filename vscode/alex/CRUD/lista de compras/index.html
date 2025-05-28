@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container_principal" id="container-principal">
+        <div class="cadastro">
+            <h1>Lista de compras do googas</h1>
+            <button class="botao_cadastro" onclick="chamarCadastro()">Cadastrar novos itens</button>
+        </div>
+        <div class="conteudo-lista">
+            <ol id="minhalista">
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="container-2">
+        
+    </div>
+    <div class="container-cadastro" id="container-cadastro">
+        <div class="cadastro">
+            <h1>Cadastrar item</h1>
+            <button onclick="voltarCadastro()" class="botao-voltar">Voltar</button>
+        </div>
+        <div class="conteudo-cadastro">
+            <label for="nome">Nome do item</label>
+            <input id="nome" type="text">
+            <button onclick="adicionarItem()">Cadastrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
