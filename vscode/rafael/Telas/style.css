@@ -1,23 +1,16 @@
 #login, #cadastro{
-    animation: aparecer 0.7s ease-out;
+    animation: aparecer 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     margin: 10px;
     width: 300px;
-    min-height: 400px;
-    gap: 20px;
+    min-height: 300px;
+    gap: 15px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-}
-
-@keyframes aparecer {
-    0% {opacity: 0;}
-    50% {opacity: 0.5; scale: 1.01;}
-    100% {opacity: 1; scale: 1;}
 }
 
 #cadastro { 
@@ -25,14 +18,27 @@
     background-color: cornflowerblue;
 }
 
+#produtos {
+    display: none;
+}
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    50% {opacity: 0.7; scale: 1.01;}
+    100% {opacity: 1; scale: 1;}
+}
+
+
 .containerInput{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 input {
-    border-radius: 5px;
+    border-radius: 10px;
     height: 25px;
+    color: black;
 }
 
 button {
@@ -41,8 +47,7 @@ button {
     background-color: rgb(45, 195, 255);
     border-radius: 5px;
     border: none;
-    padding: 10px;
-    margin-inline: 5px;
+    padding: 5px;
 }
 
 button:hover {
@@ -55,4 +60,10 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

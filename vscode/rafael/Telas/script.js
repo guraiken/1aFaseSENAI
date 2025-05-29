@@ -1,9 +1,21 @@
 function mostrarLogin(){
+    esconderTodas()
     document.getElementById("login").style.display = "flex"
-    document.getElementById("cadastro").style.display = "none"
 }
 
 function mostrarCadastro(){
+    esconderTodas()
     document.getElementById("cadastro").style.display = "flex"
+}
+
+function mostrarProdutos(){
+    esconderTodas()
+    document.getElementById("produtos").style.display = "flex"
+}
+
+function esconderTodas(){
+    document.getElementById("cadastro").style.display = "none"
     document.getElementById("login").style.display = "none"
+    document.getElementById("produtos").style.display = "none"
+    //esconder novas paginas
 }
