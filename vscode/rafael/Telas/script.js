@@ -1,11 +1,13 @@
 function mostrarLogin(){
     esconderTodas()
     document.getElementById("login").style.display = "flex"
+    document.getElementById("inpLogNome").focus()
 }
 
 function mostrarCadastro(){
     esconderTodas()
     document.getElementById("cadastro").style.display = "flex"
+    document.getElementById("inpCadEmail").focus()
 }
 
 function mostrarProdutos(){
@@ -34,6 +36,8 @@ function cadastrar(){
     usuario.nome = document.getElementById("inpCadName").value
     usuario.senha = document.getElementById("inpCadPass").value
     alert("Usuário cadastrado!")
+    
+    limparInputs()
     mostrarLogin()
 }
 
@@ -43,8 +47,18 @@ function logar(){
 
     if(nome == true && senha == true){
         alert("Login efetuado com sucesso!")
+        limparInputs()
         mostrarProdutos()
     }else{ 
         alert("Login efetuado sem sucesso!")
     }
+}
+
+function limparInputs(){
+    document.getElementById('inpCadName').value = ''
+    document.getElementById('inpCadEmail').value = ''
+    document.getElementById('inpCadPass').value = ''
+    
+    document.getElementById('inpLogNome').value = ''
+    document.getElementById('inpLogSenha').value = ''
 }
