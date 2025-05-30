@@ -1,3 +1,6 @@
+mostrarLogin()
+// vai deixar no foco quando abrir a pagina
+
 function mostrarLogin(){
     esconderTodas()
     document.getElementById("login").style.display = "flex"
