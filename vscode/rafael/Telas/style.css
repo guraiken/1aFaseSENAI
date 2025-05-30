@@ -39,6 +39,7 @@ input {
     border-radius: 10px;
     height: 25px;
     color: black;
+    text-align: center;
 }
 
 button {
