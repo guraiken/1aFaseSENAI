@@ -12,6 +12,31 @@
     gap: 15px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
+.linkCad {
+    font-size: 15px;
+}
+.linkCad-2 {
+    font-size: 15px;
+    color: white;
+    gap: 20px;
+}
+.linkCad-2 a {
+    font-size: 15px;
+    color: rgb(0, 255, 76);
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+    cursor: pointer;
+}
+a:hover {
+    color: aqua;
+}
+
+#navbar {
+    display: none;
+}
 
 #cadastro { 
     display: none;
@@ -68,3 +93,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+

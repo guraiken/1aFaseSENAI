@@ -1,5 +1,12 @@
-mostrarLogin()
+inicializar()
 // vai deixar no foco quando abrir a pagina
+// variaveis de nome, email e senha em objeto.
+
+let usuarios = []
+
+// primeiro teste de array
+// let nomesTeste = []
+// nomesTeste.push("Zé roberto") 
 
 function mostrarLogin(){
     esconderTodas()
@@ -16,6 +23,7 @@ function mostrarCadastro(){
 function mostrarProdutos(){
     esconderTodas()
     document.getElementById("produtos").style.display = "flex"
+    document.getElementById("navbar").style.display = "flex"
 }
 
 function esconderTodas(){
@@ -25,35 +33,38 @@ function esconderTodas(){
     //esconder novas paginas
 }
 
-// variaveis de nome, email e senha
-// let email, nome, senha
-
-let usuario = {
-    email: '',
-    nome: '',
-    senha: ''
-}
-
 function cadastrar(){
-    usuario.email = document.getElementById("inpCadEmail").value
-    usuario.nome = document.getElementById("inpCadName").value
-    usuario.senha = document.getElementById("inpCadPass").value
-    alert("Usuário cadastrado!")
+    let usuario = {
+        email: document.getElementById("inpCadEmail").value,
+        nome: document.getElementById("inpCadName").value,
+        senha: document.getElementById("inpCadPass").value
+    }
     
+    usuarios.push(usuario)
     limparInputs()
     mostrarLogin()
+    
+    alert("Usuário cadastrado!")
+    
+    console.log(usuarios)
 }
 
 function logar(){
-    let nome = document.getElementById("inpLogNome").value === usuario.nome ? true : false
-    let senha = document.getElementById("inpLogSenha").value === usuario.senha ? true : false
+    let nomeUsuario = document.getElementById("inpLogNome").value
+    let senhaUsuario = document.getElementById("inpLogSenha").value
 
-    if(nome == true && senha == true){
-        alert("Login efetuado com sucesso!")
-        limparInputs()
-        mostrarProdutos()
-    }else{ 
-        alert("Login efetuado sem sucesso!")
+    for(let i = 0; i< usuarios.length; i++ ){
+        usuarios[i].nome
+        usuarios[i].email
+        usuarios[i].senha
+        if((nomeUsuario === usuarios[i].nome || nomeUsuario === usuarios[i].email) && senhaUsuario == usuarios[i].senha){
+            limparInputs()
+            mostrarProdutos()
+            alert("Login efetuado com sucesso!" + " Olá " + usuarios[i].nome)
+        }
+        // }else{ 
+        //     alert("O login não pôde ser efetuado.")
+        // }
     }
 }
 
@@ -64,4 +75,8 @@ function limparInputs(){
     
     document.getElementById('inpLogNome').value = ''
     document.getElementById('inpLogSenha').value = ''
+}
+
+function inicializar(){
+    mostrarLogin()
 }
