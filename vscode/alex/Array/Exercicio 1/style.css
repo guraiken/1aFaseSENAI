@@ -3,5 +3,12 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
