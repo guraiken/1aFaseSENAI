@@ -67,12 +67,6 @@ ol {
 
 /* Parte do cadastro */
 
-.container-2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .container-cadastro {
     margin: 20px;
     width: 50%;
