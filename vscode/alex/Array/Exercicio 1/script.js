@@ -136,3 +136,80 @@ function exer15() {
     console.log(strings)
     console.log(number)
 }
+
+// 27. Coloque a primeira letra de cada palavra em maiúscula
+function exer16() {
+    let palavras = ["teste", "seila", "qlqr coisa", "porcaria"]
+    let palavrasMaiusculas = palavras.map((palavra) => {
+        let [primeira, ...restante] = palavra
+        let novaletra = primeira.toUpperCase()
+        return novaletra + restante.join('')
+    })
+    console.log(palavrasMaiusculas)
+}
+
+// 28. Verifique se todos os elementos são números com .every().
+// find nao percorre todos os elementos por isso nao é recomendavel 
+function exer17() {
+    let elementos = [4, 6, 8, 10, 12, 14, 16]
+    let saonumeros = elementos.every(elemento => typeof elemento === "number")
+    console.log(saonumeros)
+}
+
+// Verifique se ao menos um número é maior que 100 usando .some().
+function exer18() {
+    let numeros = [10, 20, 30, 40 , 55, 120, 44]
+    let teste = numeros.some(numeros => numeros > 100)
+    console.log(teste)
+}
+
+// 30. "Achatamento": transforme um array com subarrays em um único array plano
+// (um nível só).
+function exer19() {
+    let arraydearray = [321,34,51,55, [412, 312, 22, 11, ["sabonetasso", "dadaboae"]]]
+    let arrays = arraydearray.flat(2)
+    console.log(arraydearray, arrays)
+
+}
+
+// 31. A partir de uma lista de idades, retorne apenas os adultos (idade ≥ 18).
+function exer20() {
+    let idades = [18, 19, 15, 14, 16, 20, 25, 29]
+    let idadesMaior = idades.filter(idades => idades >= 18)
+    console.log(idadesMaior)
+}
+
+// 32. Crie uma função que recebe um array de números e retorna a média.
+
+// 34. Rotacione os elementos de um array uma posição para a direita.
+function exer21() {
+   let notas = [5,6,7,8]
+    console.log(calcularMedia(notas))
+    console.log(rotacionar(notas))
+}
+function calcularMedia(array){
+    let soma = array.reduce((acumulador, atual)=> acumulador+= atual, 0) /*começa com 0 e vai acumulando até somar o total*/
+    return soma/array.length /*soma divida pela quantidade de notas*/
+} 
+
+
+function rotacionar(array){
+    array.unshift(array.pop())
+    return array;
+}
+
+// 37. Conte as vogais em cada string de um array.
+function exer22() {
+    let palavras = ["vagabundo", "condominio", "miseria"]
+    console.log(palavras.map(palavras=> {
+        return {
+            palavra: palavras,
+            vogais: contarVogais(palavras)
+        }
+    }))
+}
+
+function contarVogais(palavra) {
+    return (palavra.match(/[aeiou]/gi) || []).length
+}
+

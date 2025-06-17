@@ -13,6 +13,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    
 }
 .botoes button{
     padding: 20px;
