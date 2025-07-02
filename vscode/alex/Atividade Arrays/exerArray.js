@@ -217,3 +217,17 @@ function exer29(){
     let nomeDamaiorLetra = nomes[achemaiorLetra]
     console.log(`O nome da maior letra é ${nomeDamaiorLetra} e tem ${maiorLetra} letras.`)
 }
+
+const alunos = [
+    {nome: "Gustavo", notas: [8,9,10]},
+    {nome: "Fodase", notas: [6,7,8]}
+]
+let medias = alunos.map(aluno=>{
+    let media = aluno.notas.reduce((acc, nota)=> acc + nota) / aluno.notas.length
+    aluno.notas = media
+    return {
+        nome: aluno.nome,
+        media: aluno.notas
+    }
+})
+console.log(medias)
