@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    width: 100%;
+    height: 100vb; 
+}
+
+#container{
+    display: flex;
+    width: 100%;
+    height: 100vb;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+#buttons button{
+    font-size: 20px;
+}
+
+#botaoCarmesin {
+    background-color: rgb(196, 54, 54);
+}
+#botaoCinza {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+#botaoBranco {
+    background-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos do Modo Noturno (quando a classe .modo-noturno é aplicada) */
+.modo-noturno {
+    background-color: rgb(27, 27, 27) !important;
+    color: white !important;
+}
+
+.modo-noturno h1 {
+    color: white !important;
+}
