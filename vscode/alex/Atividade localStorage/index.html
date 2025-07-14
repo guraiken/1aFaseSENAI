@@ -9,12 +9,15 @@
 <body>
     <div id="container">
         <section>
-            <h1 id="saudar"></h1>
+            <h1 id="mensagem"></h1>
+            <h2 id="saudar"></h2>
             <div id="buttons">
                 <button onclick="exer1()">Mostrar exer 1</button>
                 <button onclick="exer2()">Mostrar exer 2</button>
                 <button onclick="exer5()">Mostrar exer 5</button>
                 <button onclick="exer6()">Mostrar exer 6</button>
+                <button onclick="exer9()">Mostrar exer 9</button>
+                <button onclick="exer10()">Mostrar exer 10</button>
                 <button onclick="escondertudo()">Esconder tudo</button>
             </div>
             <div id=paginaContador style="display: none;">
@@ -32,6 +35,17 @@
             </div>
             <div id="paginaExer6" style="display: none;">
                 <button onclick="ativarModoNoturno()" id="botao-tema">Modo Noturno</button>
+            </div>
+            <div id="paginaExer9" style="display: none;">
+                <label for="mensagemPerso">Mensagem Personalizada</label>
+                <input id="mensagemPerso" type="text">
+                <button onclick="mensagemPerson()">Salvar</button>
+            </div>
+            <div id="paginaExer10" style="display: none;">
+                <label for="inputSecreto">Número Secreto</label>
+                <input id="inputSecreto" type="number">
+                <button onclick="verificarTentativa()">Adivinhar</button>
+                <p id="mensagemErro"></p>
             </div>
         </section>
     </div>
